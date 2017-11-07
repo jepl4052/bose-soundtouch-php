@@ -9,12 +9,12 @@ $tv = new BoseSpeaker("192.168.1.174");
 
 //$bc = new BoseCommand();
 
-$response = BoseCommand::sendGetCommand($tv->getSpeakerIP(), "info");
+$response = BoseCommand::sendGet($tv->getSpeakerIP(), "sources");
 
 $output = new SimpleXMLElement($response);
 
-echo $output->name;
+//echo $output->name;
 
-//var_dump($response);
+var_dump($output);
 
 ?>
