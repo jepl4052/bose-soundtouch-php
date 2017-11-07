@@ -2,9 +2,9 @@
 
 //load all source files from src/
 
-requireAll('src');
+includeAll('src');
 
-function requireAll($dir) {
+function includeAll($dir) {
     $f = scandir($dir);
     foreach ($f as $f2) {
         if ($f2 == "." || $f2 == "..") continue;
@@ -12,7 +12,7 @@ function requireAll($dir) {
             requireAll($dir . DIRECTORY_SEPARATOR . $f2);
         } else {
             if (substr($f2, -4) == ".php") {
-                require_once($dir . DIRECTORY_SEPARATOR . $f2);
+                include_once($dir . DIRECTORY_SEPARATOR . $f2);
             }
         }
     }
