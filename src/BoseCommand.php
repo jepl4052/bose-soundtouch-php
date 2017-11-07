@@ -6,12 +6,12 @@ class BoseCommand {
 
    }
 
-   function static sendGetCommand($ip, $method) {
+   static function sendGetCommand($ip, $method) {
       $ch = curl_init("http://$ip:8090/$method");
       return $response = curl_exec($ch);
    }
 
-   function static sendPostCommand($ip, $method, $xml) {
+   static function sendPostCommand($ip, $method, $xml) {
       $ch = curl_init("http://$ip:8090/$method");
       curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type: application/xml'));
       curl_setopt($ch, CURLOPT_POST, true);
