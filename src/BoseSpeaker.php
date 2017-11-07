@@ -8,12 +8,12 @@ class BoseSpeaker {
       this->$ip = $ip;
    }
 
-   public function getIP()
+   public function getSpeakerIP()
    {
       return $this->$ip;
    }
 
-   public function setIP($ip)
+   public function setSpeakerIP($ip)
    {
          $this->$ip = $ip;
    }
