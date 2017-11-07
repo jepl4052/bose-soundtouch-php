@@ -1,5 +1,5 @@
 <?php
-public class BoseSpeaker {
+class BoseSpeaker {
 
    private $ip;
 
@@ -19,5 +19,4 @@ public class BoseSpeaker {
    }
 
 }
-
 ?>
