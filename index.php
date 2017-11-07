@@ -1,7 +1,7 @@
 <?php
 
 //setup
-require 'loader.php';
+require_once('loader.php');
 
 $tv = new BoseSpeaker("192.168.1.174");
 
