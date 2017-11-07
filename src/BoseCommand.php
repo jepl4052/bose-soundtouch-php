@@ -6,9 +6,6 @@ class BoseCommand {
 
    }
 
-
-
-
    function sendCommand($ip, $method, $xml) {
       $ch = curl_init("http://$ip:8090/$method");
       curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type: application/xml'));
