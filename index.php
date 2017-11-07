@@ -7,7 +7,7 @@ $tv = new BoseSpeaker("192.168.1.174");
 
 echo $tv->getSpeakerIP();
 
-$response = BoseCommand::sendCommand($tv->getSpeakerIP(), "info", null);
+$response = BoseCommand::sendGetCommand($tv->getSpeakerIP(), "info");
 
 var_dump($response);
 
