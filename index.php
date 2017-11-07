@@ -5,12 +5,15 @@ include_once('loader.php');
 
 $tv = new BoseSpeaker("192.168.1.174");
 
-echo $tv->getSpeakerIP();
+//echo $tv->getSpeakerIP();
 
 //$bc = new BoseCommand();
 
 $response = BoseCommand::sendGetCommand($tv->getSpeakerIP(), "info");
 
-var_dump($response);
+//var_dump($response);
+
+$output = new SimpleXMLElement($response, NULL, true);
+echo $output->asXML();
 
 ?>
