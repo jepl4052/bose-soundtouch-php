@@ -8,6 +8,9 @@ class BoseCommand {
 
    static function sendGetCommand($ip, $method) {
       $ch = curl_init("http://$ip:8090/$method");
+      curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type: application/xml'));
+      curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+      curl_close($ch);
       return $response = curl_exec($ch);
    }
 
