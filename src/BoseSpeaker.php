@@ -5,7 +5,7 @@ public class BoseSpeaker {
 
    public function __construct($ip)
    {
-      this->$ip = $ip;
+      $this->$ip = $ip;
    }
 
    public function getSpeakerIP()
