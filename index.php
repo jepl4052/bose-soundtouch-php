@@ -15,6 +15,6 @@ $output = new SimpleXMLElement($response);
 
 //echo $output->name;
 
-var_dump($output);
-
+header('Content-Type: text/xml');
+echo $output->asXML(); 
 ?>
