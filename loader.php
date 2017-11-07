@@ -1,6 +1,6 @@
 <?php
 
-//load all source files from src/
+//load all files from src/
 
 includeAll('src');
 
