@@ -13,7 +13,11 @@ $response = BoseCommand::sendGetCommand($tv->getSpeakerIP(), "info");
 
 //var_dump($response);
 
-$output = simplexml_load_string($response);
+$string = <<<XML
+$response
+XML;
+
+$output = simplexml_load_string($string);
 echo $output;
 
 ?>
