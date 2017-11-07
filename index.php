@@ -1,5 +1,5 @@
 <?php
 
-echo "Let's do some Bose-stuff!";
+echo "Setting up git workspace";
 
 ?>
