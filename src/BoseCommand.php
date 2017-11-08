@@ -6,6 +6,13 @@ class BoseCommand {
       //for consistency
    }
 
+   private function executeCURL($ch)
+   {
+      $response = curl_exec($ch);
+      curl_close($ch);
+      return $response;
+   }
+
    public function sendGet($ip, $method)
    {
       $ch = curl_init("http://$ip:8090/$method");
@@ -24,11 +31,5 @@ class BoseCommand {
       return executeCURL($ch);
    }
 
-   public function executeCURL($ch)
-   {
-      $response = curl_exec($ch);
-      curl_close($ch);
-      return $response;
-   }
 }
 ?>
