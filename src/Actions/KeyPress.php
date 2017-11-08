@@ -20,7 +20,7 @@ class KeyPress {
    }
 
    public function getPayload() {
-      return = '<key state="'. getState() .'" sender="Gabbo">'. getValue() .'</key>';
+      return = "<key state=\"getState()\" sender=\"Gabbo\">getValue()</key>';
    }
 
    public function getState() {
