@@ -24,7 +24,7 @@ class BoseCommand {
       return executeCURL($ch);
    }
 
-   private function executeCURL($ch)
+   public function executeCURL($ch)
    {
       $response = curl_exec($ch);
       curl_close($ch);
