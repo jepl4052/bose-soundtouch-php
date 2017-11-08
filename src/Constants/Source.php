@@ -15,6 +15,6 @@ class Source
     const CURRATED_RADIO = "CURRATED_RADIO";
     const STANDBY = "STANDBY";
     const UPDATE = "UPDATE";
-    const DEEZER     = "DEEZER";
+    const DEEZER = "DEEZER";
 }
 ?>
